@@ -1,13 +1,14 @@
 /* Base styling */
 body {
-  font-family: 'Lucida Sans', sans-serif;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: lighter;
   margin: 0;
   padding: 0;
-  background-color: rgb(78, 13, 231);
   color: #fff;
   box-sizing: border-box;
   overflow-x: hidden;
   transition: background-color 0.5s, color 0.5s;
+  background-image: url(images/work\ 4.png);
 }
 
 body.light-theme {
@@ -17,8 +18,8 @@ body.light-theme {
 
 /* Header Styling */
 header {
-  background-color: #df0fce;
-  color: white;
+  background-color: #080808;
+  color: rgb(37, 240, 10);
   padding: 1em;
   display: flex;
   justify-content: space-between;
@@ -36,14 +37,16 @@ header a:hover {
 }
 
 .logo-img {
-  height: 40px;
-  margin-right: 10px;
+  height: 50px;
+  margin-right: 5px;
+  border-radius: 20%;
+  width: 50px;
 }
 
 .logo-text {
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: rgb(182, 228, 18);
 }
 
 button#theme-toggle {
@@ -141,13 +144,13 @@ body.light-theme #contact {
   flex-direction: column;
   align-items: center;
   gap: 1.5em;
-  max-width: 800px;
+  max-width: 1500px;
   margin: 0 auto;
   text-align: center;
   padding: 2em;
-  background-color: #9d80c2;
-  border-radius: 20%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background-color:rgba(0,0,0,0.3);
+  border-radius: 0%;
+  box-shadow: 0 4px 10px rgba(17, 79, 212, 0.3);
   animation: fadeIn 1.5s ease-out;
   position: relative;
 }
@@ -164,8 +167,8 @@ body.light-theme #contact {
 /* Portfolio Section */
 .portfolio-grid {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: cover;
+  flex-wrap: cover;
   gap: 30px;
   margin-top: 2em;
   max-width: 1200px;
@@ -235,17 +238,20 @@ body.light-theme #contact {
 
 /* Contact Section */
 #contact h2 {
-  font-size: 2em;
+  font-size: 2.3em;
   margin-bottom: 1em;
+  color: #11ec2e;
+  background: #0e0d0d;
 }
 
 .contact-form {
   max-width: 600px;
   margin: 0 auto;
-  text-align: left;
-  background: #9d80c2;
+  text-align: center;
+  background: #070707;
   border-radius: 20%;
   padding: 2em;
+  color: #49b907d7;
 }
 
 .contact-form form {
@@ -258,7 +264,7 @@ body.light-theme #contact {
 .contact-form textarea {
   padding: 0.5em;
   border-radius: 5px;
-  border: rgb(4, 236, 93);
+  border: rgb(23, 236, 4);
   font-size: 1em;
   color: #333;
   background-color: #ffffff;
@@ -303,6 +309,7 @@ footer {
   color: #fff;
   padding: 1.5em 0;
   text-align: center;
+  font-size: small;
 }
 
 footer a {
