@@ -25,9 +25,26 @@ header {
   justify-content: space-between;
   align-items: center;
   animation: slideIn 1s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  
+  
 }
-
-header a:hover {
+.nav-links {
+  display: flex;
+  gap: 2em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  animation: slideIn 1s ease-out;
+}
+  
+.nav-links a:hover {
   color: #ff004f;
 }
 
@@ -52,7 +69,7 @@ header a:hover {
 button#theme-toggle {
   background: none;
   border: none;
-  color: #fff;
+  color: #920808;
   font-size: 1.5em;
   cursor: pointer;
 }
@@ -63,14 +80,13 @@ body.light-theme button#theme-toggle {
 
 /* Hero Section */
 #hero {
-  background-image: url("images/hero-image.png"); /* Replace with your image path */
+  background-image: url(images/work\ 2.png); /* Replace with your image path */
   background-size: cover;
-  background-position: center;
+  background-position: cover;
   background-attachment: fixed; /* stops background from moving */
   position: relative;
   width: 100%;
   height: 100vh;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,8 +101,9 @@ body.light-theme button#theme-toggle {
   animation: fadeIn 2s ease-in;
   position: relative;
   z-index: 1;
-  color: #11ec2e;
-  padding: 2em;
+  color:white;
+  padding: 3em;
+
 }
 
 .cta-button {
@@ -110,7 +127,7 @@ body.light-theme button#theme-toggle {
 .cta-button:hover {
   background-color: rgb(154, 243, 10);
   transform: translateY(-5px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 10px rgba(236, 6, 6, 0.3);
   animation: bounceIn 0.5s ease-in-out;
   animation-fill-mode: forwards;
   opacity: 0.8;

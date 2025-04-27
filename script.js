@@ -98,4 +98,4 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         localStorage.setItem('theme', 'dark');
       }
-    });
+    })
